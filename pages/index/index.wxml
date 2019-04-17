@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="usermotto">
+    <text class="user-motto" bindtap='click'>{{motto}}</text>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+     当前的国家:{{array[index]}}
+    </view>
+  </picker>
+
+     <picker bindchange="picknum" value="{{number}}" range="{{arraynum}}">
+       <view class="picker"  style="color:{{numTextColor}}">
+      {{num}}
+       </view>
+     </picker>
+  </view>
+</view>
